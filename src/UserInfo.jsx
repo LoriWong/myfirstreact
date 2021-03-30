@@ -39,7 +39,10 @@ const UserInfo = () => {
                 {
                     userInfos.map((userInfo, index) => (
                         <div key={index}>
-                            <p>{getFullName(userInfo)}</p>
+                            <img src={userInfo.picture.large}/>
+                            <p>Name : {getFullName(userInfo)}</p>
+                            <p>Email : {userInfo.email}</p>
+                            <p>Phone No. : {userInfo.phone}</p>
                         </div>
                     ))
                 }
